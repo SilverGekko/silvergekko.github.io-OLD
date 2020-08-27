@@ -24,3 +24,7 @@
 #timer-button {
     width: 8em;
 }
+
+#timer-button-text {
+  font-size: 4vw;
+}
