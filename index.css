@@ -27,7 +27,7 @@
 
 @media only screen and (orientation:portrait) {
   body {
-    background-color: yellowgreen;
+    background-color: skyblue;
   }
   .title-text-top {
     font-size: 8vw;
@@ -36,6 +36,6 @@
     font-size: 6vw;
   }
   #timer-text {
-    font-size: 16vw;
+    font-size: 20vw;
   }
 }
