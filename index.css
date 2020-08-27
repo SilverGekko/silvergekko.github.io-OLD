@@ -27,9 +27,9 @@
 
 @media only screen and (orientation:portrait) {
   body {
-    background-color: red;
+    background-color: green;
   }
-  #title-text {
+  .title-text {
     font-size: 4vw;
   }
 }
