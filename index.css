@@ -27,9 +27,12 @@
 
 @media only screen and (orientation:portrait) {
   body {
-    background-color: green;
+    background-color: purple;
   }
   .title-text {
-    font-size: 4vw;
+    font-size: 6vw;
+  }
+  #timer-text {
+    font-size: 8vw;
   }
 }
