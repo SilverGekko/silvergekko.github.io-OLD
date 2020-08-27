@@ -23,7 +23,7 @@ function toggleTimer(elem) {
   } else {
     timer_running = false;
     clearTimeout(timeout_loop);
-    document.getElementById('timer-button-text').innerHTML = "00:00:00";
+    document.getElementById('timer-text').innerHTML = "00:00:00";
     // document.getElementById('g5').classList.add('image-holder-active');
     pic_list.forEach(id => document.getElementById(id).classList.remove("image-holder-active"));
     elem.innerHTML = "Begin Timer"
@@ -41,7 +41,7 @@ function incrTimer(s, m, h) {
   h = values[2];
   console.log("incrTimer");
   console.log(values);
-  document.getElementById('timer-button-text').innerHTML = checkTime(h) + ":" + checkTime(m) + ":" + checkTime(s);
+  document.getElementById('timer-text').innerHTML = checkTime(h) + ":" + checkTime(m) + ":" + checkTime(s);
   timeout_loop = setTimeout(function() {incrTimer(s, m, h)}, timeout_time);
 }
 
