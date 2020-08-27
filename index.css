@@ -25,6 +25,13 @@
     width: 8em;
 }
 
-#timer-button-text {
-  font-size: 4vw;
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  #title-text {
+    font-size: 10vw;
+  }
 }
