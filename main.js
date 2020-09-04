@@ -6,19 +6,23 @@ var group1 = ["g1", "g2", "g3", "g4", "g5"]
 var group2 = ["g6", "g7", "g8"]
 var group3 = ["g9", "g10"]
 var group4 = ["g11", "g12"]
+var timeout_loop;
 var timeout_time = 1000;
 var rep_text = "Repetitions Done: "
 
+function scroll_down() {
+  if (window.innerWidth <= 1920 || window.innerHeight <= 1000) {
+    window.scroll({
+      top: 110,
+      behavior: 'smooth'
+    });
+  }
+}
+
 function build_groups() {
   group0 = [];
-  console.log(document.getElementById("group0CheckBox").checked);
-  console.log(document.getElementById("group1CheckBox").checked);
-  console.log(document.getElementById("group2CheckBox").checked);
-  console.log(document.getElementById("group3CheckBox").checked);
-  if (document.getElementById("group0CheckBox").checked == true) {
+  if (document.getElementById("group0CheckBox").checked) {
     group0 = group0.concat(group1);
-    console.log(group0);
-
   }
   if (document.getElementById("group1CheckBox").checked) {
     group0 = group0.concat(group2);
@@ -38,7 +42,8 @@ function checkTime(i) {
 
 function toggleTimer(elem) {
   if (!timer_running) {
-    build_groups()
+    build_groups();
+    scroll_down();
     timer_running = true;
     elem.innerHTML = "Stop Timer   "
     elem.classList.remove("btn-primary");

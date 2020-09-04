@@ -25,6 +25,10 @@
     width: 8em;
 }
 
+#jumbo {
+  padding: 20px;
+}
+
 @media only screen and (orientation:portrait) {
   body {
     background-color: skyblue;
@@ -37,5 +41,15 @@
   }
   #timer-text {
     font-size: 18vw;
+  }
+}
+
+/* (1920x1080) Full HD Display */
+@media  screen and (max-width: 1920px) {
+  h1, h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.17em;
   }
 }
