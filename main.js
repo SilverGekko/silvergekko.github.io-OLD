@@ -13,7 +13,7 @@ var rep_text = "Repetitions Done: "
 function scroll_down() {
   if (window.innerWidth <= 1920 || window.innerHeight <= 1000) {
     window.scroll({
-      top: 110,
+      top: document.body.scrollHeight,
       behavior: 'smooth'
     });
   }
